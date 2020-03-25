@@ -162,6 +162,7 @@ $this->soapWrapper->add('Currency', function ($service) {
         ->classmap([
           GetConversionAmount::class,
           GetConversionAmountResponse::class,
+          ['SoapClassName' => MyCustomSoapClassName::class]
         ]);
 });
 ```
